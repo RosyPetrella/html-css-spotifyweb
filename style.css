@@ -31,8 +31,10 @@ body {
     width: 230px;
     background-color: black;
     color: var(--sidebar-text);
+    display: flex;
     /* da controllare */
     height: 90vh;
+
 
     .logo {
         width: 70%;
@@ -86,6 +88,28 @@ body {
     .playlist {
         font-size: 12px;
         line-height: 1.5rem;
+    }
+
+    .profile {
+        .download {
+            font-size: 12px;
+           
+        }
+
+        .user {
+            font-size: 14px;
+
+            .fa-solid {
+                font-size: 27px ;
+                vertical-align: middle;
+                color: var(--sidebar-text);
+                margin-right: 0.25rem;
+            }
+        }
+
+        hr {
+            border: 0.5px solid var(--sidebar-text);
+        }
     }
 }
     

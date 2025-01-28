@@ -50,6 +50,8 @@ body {
 
     nav {
         padding-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     ul {
@@ -96,9 +98,11 @@ body {
     .playlist {
         font-size: 12px;
         line-height: 1.5rem;
+        flex-grow: 1;
     }
 
     .profile {
+    
         .download {
             font-size: 12px;
            

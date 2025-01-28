@@ -13,9 +13,18 @@
     border: 0.5px dashed blue;
 }
 
+/* UTILITY */
+
+.white {
+    color: white;
+}
+
 body {
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .sidebar {
@@ -23,14 +32,14 @@ body {
     background-color: black;
     color: var(--sidebar-text);
     /* da controllare */
-    height: 100vh;
+    height: 90vh;
 
     .logo {
         width: 70%;
     }
 
     nav {
-        padding: 0.5rem;
+        padding: 0.25rem;
     }
 
     ul {
@@ -38,11 +47,45 @@ body {
 
         li {
             list-style: none;
+            padding-top:0.25rem;
+            padding-bottom: 0.25rem;
+            
+
+            .fa-solid {
+                padding-right: 0.5rem;
+                font-size: 23px;
+                vertical-align: middle;
+
+            }
 
             a {
-                color: white;
-                text-decoration: none;
+                color: var(--sidebar-text);
+                text-decoration: none; 
+                font-size: 12px;   
             }
         }
     }
+
+    h2 {
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        margin-top: 0.25rem;
+        font-size: 14px;
+        
+
+        .fa-solid {
+            font-size: 40px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    }
+
+    .playlist {
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
 }
+    

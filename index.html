@@ -28,44 +28,53 @@
       <div class="sidebar">
         <nav>
           <div class="logo">
-            <img src="./img/logo.svg" alt="logo Spotify" />
+            <img class="logo-big" src="./img/logo.svg" alt="logo Spotify" />
+            <img class="logo-small" src="./img/logo-small.svg" alt="" />
           </div>
           <ul>
             <li>
               <a href="#"
                 ><i class="fa-solid fa-house white"></i
-                ><strong class="white">Home</strong></a
+                ><strong class="white"
+                  ><span class="show">Home</span></strong
+                ></a
               >
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a>
             </li>
             <li>
               <a href="#"
-                ><i class="fa-solid fa-swatchbook"></i>La tua libreria</a
+                ><i class="fa-solid fa-magnifying-glass"></i
+                ><span class="show">Cerca</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-swatchbook"></i
+                ><span class="show">La tua libreria</span></a
               >
             </li>
           </ul>
-          <h2 class="white">PLAYLIST</h2>
-          <h3><i class="fa-solid fa-square-plus"></i>Crea Playlist</h3>
-          <ul class="playlist">
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-          </ul>
-
+          <div class="show">
+            <h2 class="white">PLAYLIST</h2>
+            <h3><i class="fa-solid fa-square-plus"></i>Crea Playlist</h3>
+            <ul class="playlist">
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
           <div class="profile">
             <span class="download"
-              ><i class="fa-regular fa-circle-down"></i> Installa app</span
+              ><i class="fa-regular fa-circle-down"></i>
+              <span class="show"> Installa app</span></span
             >
-            <hr />
+            <hr class="show" />
             <span class="user white"
               ><i class="fa-solid fa-circle-user"></i>
-              <strong>John Doe</strong></span
+              <strong class="show">John Doe</strong></span
             >
           </div>
         </nav>

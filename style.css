@@ -9,7 +9,7 @@
     --bottom-bg: #282828;
 }
 
-* {
+ {
     border: 0.5px dashed blue;
 }
 
@@ -19,6 +19,8 @@
     color: white;
 }
 
+
+/* BODY */
 body {
     margin: 0px;
     box-sizing: border-box;
@@ -27,7 +29,9 @@ body {
     font-style: normal;
 }
 
+/* SIDEBAR */
 .sidebar {
+    padding-top: 1rem;
     width: 230px;
     background-color: black;
     color: var(--sidebar-text);
@@ -38,10 +42,14 @@ body {
 
     .logo {
         width: 70%;
+
+        .logo-small {
+            display: none;
+        }
     }
 
     nav {
-        padding: 0.25rem;
+        padding-left: 0.5rem;
     }
 
     ul {
@@ -113,3 +121,37 @@ body {
     }
 }
     
+/* META QUERY */
+
+
+
+
+/* XS */
+ @media screen and (max-width:550px) {
+    
+    .show {
+        display: none;
+    }
+    .sidebar {
+        width: 50px;
+        text-align: center;
+
+        .logo {
+            width: 30px;
+            .logo-big {
+                display: none;
+            }
+            .logo-small {
+                display: block;
+            }
+        }
+
+        .profile {
+            text-align: center;
+            line-height: 2rem;
+        }
+
+
+        
+    }
+ }

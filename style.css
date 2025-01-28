@@ -1,10 +1,48 @@
 :root {
     --sidebar-bg: black;
-    --sidebar-text: #adff2f;
+    --sidebar-text: #a3a3a3;
     --main-darker: #080b12;
     --main-dark: #141922;
     --main-light: #7a7c81;
     --main-lighter: white;
     --main-highligh: #adff2f;
     --bottom-bg: #282828;
+}
+
+* {
+    border: 0.5px dashed blue;
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: black;
+    color: var(--sidebar-text);
+    /* da controllare */
+    height: 100vh;
+
+    .logo {
+        width: 70%;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    ul {
+        padding-inline-start: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }

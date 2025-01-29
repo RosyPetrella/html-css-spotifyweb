@@ -146,6 +146,25 @@ body {
     height: calc(100vh - 80px);
     width: 100%;
 
+    .upgrade {
+        background-color: var(--main-dark);
+        padding-top: 1rem;
+        position: sticky;
+        height: 50px;
+
+        span {
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 0;
+            border: 1px solid white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            position: absolute;
+            right: 0.25rem;
+        }
+    }
+
     .content {
         overflow-y: auto;
     }
@@ -157,12 +176,14 @@ body {
 
         .album {
             min-height: 100px;
-            width: calc( 100% / 6);
+            width: calc(100% / 12 * 2);
             background-color: red;
            
         }
     }
 }
+
+
 /* BOTTOM */
 
 .bottom {

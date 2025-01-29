@@ -9,11 +9,11 @@
     --bottom-bg: #282828;
 }
 
- {
-    border: 0.5px dashed blue;
-}
-
 /* UTILITY */
+
+* {
+    box-sizing: border-box;
+}
 
 .white {
     color: white;
@@ -27,7 +27,9 @@
     text-align: center;
 }
 
-
+.padding-left {
+    padding-left: 1rem;
+}
 
 
 /* BODY */
@@ -40,13 +42,11 @@ body {
     
 }
 /* TOP */
-
 .top {
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
 }
-
 
     /* SIDEBAR */
 .sidebar {
@@ -59,8 +59,6 @@ body {
     overflow-y: hidden;
     /* da controllare */
   
-
-
     .logo {
         width: 70%;
 
@@ -70,9 +68,9 @@ body {
     }
 
     nav {
-        padding-left: 1rem;
         display: flex;
         flex-direction: column;
+
     }
 
     ul {
@@ -200,8 +198,6 @@ body {
     }
 
     .content {
-        
-        
         padding: 1rem;
     }
 
@@ -246,20 +242,17 @@ body {
     .subtitle {
         color: var(--main-light);
         font-size: 10px;
-        font-weight: bold;
-        
+        font-weight: bold; 
     }
 
     .albums {
         flex-wrap: wrap;
-        gap: 1rem;
-        
+        gap: 1rem; 
 
         .album {
             min-height: 180px;
             width: calc((100% / 12 * 2) - 1rem);
-            margin-top: 0.5rem;
-           
+            margin-top: 0.5rem; 
         }
 
         .cover {
@@ -268,9 +261,7 @@ body {
 
         img {
             width: 100%;
-            display: block;
-
-            
+            display: block;  
         }
 
         i {
@@ -285,10 +276,7 @@ body {
             .hidden {
                 display: block;
             }  
-        }
-        
-
-        
+        }  
     }
 }
 
@@ -300,9 +288,6 @@ body {
     width: 100%;
     height: 80px;
     color: var(--main-light);
-    
-
-    
     
     .song-bar {
         justify-content: space-between;
@@ -454,15 +439,15 @@ body {
 
 /* M */
 
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 878px) {
 
     .top {
-    min-width: 828px;
+    min-width: 830px;
     width: 100%;
     }
 
     .bottom {
-    min-width: 828px;
+    min-width: 830px;
     width: 100%;
     }
 }

@@ -31,6 +31,7 @@ body {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow: hidden;
     
 }
 /* TOP */
@@ -145,6 +146,8 @@ body {
 .main {
     height: calc(100vh - 80px);
     width: 100%;
+    background-color: var(--main-dark);
+    overflow-y: auto;
 
     .upgrade {
         background-color: var(--main-darker);
@@ -166,8 +169,9 @@ body {
     }
 
     .content {
-        overflow-y: auto;
-        background-color: var(--main-dark);
+        
+        
+        padding: 1rem;
     }
 
     nav {
@@ -207,8 +211,9 @@ body {
         
 
         .album {
-            min-height: 100px;
-            width: calc(100% / 12 * 2);
+            /* DA RIVEDERE HEIGHT E WIDTH */
+            min-height: 180px;
+            width: calc((100% / 12 * 2) - 1rem);
             margin-top: 0.5rem;
            
         }
@@ -301,7 +306,7 @@ body {
 
         .bar {
             height: 5px;
-            width: 400px;
+            width: 100%;
             background-color: var(--main-light);
             border-radius: 50px;
             margin: 1rem;
@@ -329,7 +334,7 @@ body {
             
             .bar-volume {
                 height: 5px;
-                width: 120px;
+                width: 100%;
                 background-color: var(--main-light);
                 border-radius: 50px;
                 margin: 1rem;

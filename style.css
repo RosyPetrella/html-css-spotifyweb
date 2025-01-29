@@ -147,7 +147,7 @@ body {
     width: 100%;
 
     .upgrade {
-        background-color: var(--main-dark);
+        background-color: var(--main-darker);
         padding-top: 1rem;
         position: sticky;
         height: 50px;
@@ -167,6 +167,38 @@ body {
 
     .content {
         overflow-y: auto;
+        background-color: var(--main-dark);
+    }
+
+    nav {
+        
+        ul {
+        padding-inline-start: 0;
+        justify-content: center;
+        font-size: 9px;
+        color: var(--main-light);
+        
+
+            li{
+                list-style: none;
+                padding-left: 1rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    #create-for {
+        margin-bottom: 0rem;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        color: var(--main-light);
+        font-size: 8px;
+        font-weight: bold;
     }
 
     .albums {
@@ -177,8 +209,12 @@ body {
         .album {
             min-height: 100px;
             width: calc(100% / 12 * 2);
-            background-color: red;
+            margin-top: 0.5rem;
            
+        }
+
+        img {
+            width: 100%;
         }
     }
 }

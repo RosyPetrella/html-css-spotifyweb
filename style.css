@@ -9,7 +9,7 @@
     --bottom-bg: #282828;
 }
 
- *{
+ {
     border: 0.5px dashed blue;
 }
 
@@ -31,9 +31,15 @@ body {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    
 }
 /* TOP */
 
+.top {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
 
 
     /* SIDEBAR */
@@ -43,8 +49,9 @@ body {
     background-color: black;
     color: var(--sidebar-text);
     display: flex;
+    height: 100;
     /* da controllare */
-    height: 90vh;
+  
 
 
     .logo {
@@ -135,12 +142,33 @@ body {
     }
 }
 
+.main {
+    height: calc(100vh - 80px);
+    width: 100%;
+
+    .content {
+        overflow-y: auto;
+    }
+
+    .albums {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        
+
+        .album {
+            min-height: 100px;
+            width: calc( 100% / 6);
+            background-color: red;
+           
+        }
+    }
+}
 /* BOTTOM */
 
 .bottom {
     background-color: var(--bottom-bg);
     width: 100%;
-    height: 10vh;
+    height: 80px;
     color: var(--main-light);
     
 

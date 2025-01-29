@@ -455,6 +455,21 @@ body {
     }
     .main {
 
+        .type {
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+
+                li:nth-child(6) {
+                    flex-basis: 100%; 
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+            }
+        }
+
         .albums {
             .album {
                 width: calc((100% / 12 * 3) - 1rem);

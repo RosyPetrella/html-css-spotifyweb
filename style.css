@@ -23,6 +23,12 @@
     display: flex;
 }
 
+.center {
+    text-align: center;
+}
+
+
+
 
 /* BODY */
 body {
@@ -89,6 +95,10 @@ body {
                 color: var(--sidebar-text);
                 text-decoration: none; 
                 font-size: 12px;   
+
+                &:hover {
+                    color: var(--main-lighter);
+                }
             }
         }
     }
@@ -100,12 +110,15 @@ body {
     h3 {
         margin-top: 0.25rem;
         font-size: 14px;
-        
 
         .fa-solid {
             font-size: 40px;
             margin-right: 0.5rem;
             vertical-align: middle;
+        }
+
+        &:hover {
+            color: white;
         }
     }
     .playlist {
@@ -114,16 +127,23 @@ body {
     .playlist-names {
         font-size: 12px;
         line-height: 1.5rem;
-    }
+            li {
+                &:hover {
+                    color: var(--main-lighter);
+                }
+            }
+        }
 
     .profile {
         padding-bottom: 1rem;
         width: 200px;
-        
     
         .download {
             font-size: 12px;
-           
+
+            &:hover {
+                color: white;
+            }
         }
 
         .user {
@@ -143,17 +163,23 @@ body {
     }
 }
 
+    /* MAIN */
 .main {
     height: calc(100vh - 80px);
     width: 100%;
     background-color: var(--main-dark);
     overflow-y: auto;
 
+    .hidden {
+        display: none;
+    }
+
     .upgrade {
         background-color: var(--main-darker);
         padding-top: 1rem;
         position: sticky;
         height: 50px;
+        top: 0;
 
         span {
             color: white;
@@ -165,6 +191,10 @@ body {
             border-radius: 50px;
             position: absolute;
             right: 0.25rem;
+
+            &:hover {
+                font-size: 12px;
+            }
         }
     }
 
@@ -179,14 +209,22 @@ body {
         ul {
         padding-inline-start: 0;
         justify-content: center;
-        font-size: 9px;
+        font-size: 10px;
+        font-weight: bold;
         color: var(--main-light);
         
 
             li{
                 list-style: none;
-                padding-left: 1rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                padding-bottom: 0.25rem;
                 text-transform: capitalize;
+
+                &:hover {
+                    border-bottom: 1px solid var(--main-highligh);
+                    color: white;
+                }
             }
         }
     }
@@ -199,10 +237,16 @@ body {
         font-size: 18px;
     }
 
+    h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     .subtitle {
         color: var(--main-light);
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
+        
     }
 
     .albums {
@@ -220,7 +264,19 @@ body {
 
         img {
             width: 100%;
+            display: block;
+
+            
         }
+/* DA RIVEDERE */
+        img:hover {
+            .hidden {
+                display: block;
+            }  
+        }
+        
+
+        
     }
 }
 
@@ -263,16 +319,27 @@ body {
 
                     i {
                         padding: 0.5rem;
-                    }
+
+                        &:hover {
+                            color: white;
+                        }
+                    }  
                 }
             }
 
             span {
                 font-size: 10px;
+
+                &:hover {
+                    color: white;
+                    border-bottom: 1px solid white;
+                }
             }
 
             strong {
                 font-size: 12px;
+                margin-bottom: -0.5rem;
+                padding-bottom: 0px;
             }
         }
 
@@ -292,6 +359,10 @@ body {
 
                 .fa-circle-play {
                     font-size: 28px;
+
+                    &:hover {
+                        font-size: 30px;
+                    }
                 } 
             }
         }
@@ -299,6 +370,7 @@ body {
         .time {
         display: flex;
         align-items: center;
+        width: 100%;
 
         .minute {
             font-size: 8px;      
@@ -319,13 +391,19 @@ body {
             display: block;
             height: 100%;
         }
+        .bar:hover:after {
+            background-color: var(--main-highligh);
+        }
         }
 
         .settings {
             display: flex;
+            width: 20%;
 
             .logo-settings {
                 align-self: center;
+                display: flex;
+                width: 50%;
                 
                 i {
                     padding: 0.5rem;
@@ -348,9 +426,13 @@ body {
                 height: 100%;
             }
 
+            .bar-volume:hover:after {
+                background-color: var(--main-highligh);
             }
+
         }
     }
+}
 
 
     

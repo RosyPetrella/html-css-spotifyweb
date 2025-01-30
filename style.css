@@ -67,6 +67,14 @@ body {
         }
     }
 
+    .home-menu {
+        li {
+            &:hover {
+            border-left: 1px solid var(--main-highligh);
+            }
+        }
+    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -295,9 +303,7 @@ body {
     }
 }
 
-
 /* BOTTOM */
-
 .bottom {
     background-color: var(--bottom-bg);
     width: 100%;
@@ -398,6 +404,20 @@ body {
             background-color: var(--main-light);
             border-radius: 50px;
             margin: 1rem;
+            position: relative;
+
+            i {
+                position: absolute;
+                left: 20%;
+                top: -2px;
+                font-size: 8px;
+                color: white;
+                height: 100%;
+            }
+
+            i:hover {
+                color: var(--main-highligh);
+            }
         }
 
         .bar:after {
@@ -417,8 +437,9 @@ body {
             width: 20%;
 
             .logo-settings {
-                align-items: center;
                 display: flex;
+                align-items: center;
+                justify-content: end;
                 width: 60%;
                 
                 
@@ -435,6 +456,20 @@ body {
                 background-color: var(--main-light);
                 border-radius: 50px;
                 margin: 0.5rem;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 20%;
+                    top: -2px;
+                    font-size: 8px;
+                    color: white;
+                    height: 100%;
+                }
+
+                i:hover {
+                    color: var(--main-highligh);
+                }
             }
 
             .bar-volume:after {
@@ -445,6 +480,8 @@ body {
                 height: 100%;
             }
 
+            
+
             .bar-volume:hover:after {
                 background-color: var(--main-highligh);
             }
@@ -454,9 +491,7 @@ body {
 }
 
 
-    
 /* META QUERY */
-
 /* M */
 
 @media screen and (max-width: 878px) {
@@ -498,7 +533,6 @@ body {
 
 }
    
-
 /* S */
 @media screen and (max-width: 639px) {
 
@@ -572,7 +606,6 @@ body {
 
 }
 
-
 /* XS */
  @media screen and (max-width:550px) {
 
@@ -580,6 +613,67 @@ body {
     min-width: 502px;
     width: 100%;
     }   
+
+    .sidebar {
+        width: 50px;
+    
+        nav {
+            padding-left: 0.0rem;
+            text-align: center;  
+        }
+
+        .logo {
+            width: 40px;
+            padding-left: 0.5rem;
+            .logo-big {
+                display: none;
+            }
+            .logo-small {
+                display: block;
+            }
+        }
+
+        ul {
+            flex-grow: 1;
+
+            li {
+                padding-left: 0.5rem;
+            }
+        }
+
+        .profile {
+            text-align: center;
+            line-height: 2rem;
+            padding-bottom: 1rem;
+            width: 40px;
+            padding-left: 0.5rem;
+
+            .download {
+                padding-left: 0.5rem;
+            }
+            
+        }
+
+
+        
+    }
+
+    .main {
+
+        .type {
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+
+                li {
+                    width: calc(100% / 12 * 3);
+                }
+
+            }
+        }
+    }
     
     .bottom {
     min-width: 502px;
@@ -600,43 +694,6 @@ body {
 
     .show {
         display: none;
-    }
-
-    
-    .sidebar {
-        width: 50px;
-    
-        nav {
-            padding-left: 0.5rem;
-            text-align: center;  
-        }
-
-        .logo {
-            width: 30px;
-            text-align: center;
-            .logo-big {
-                display: none;
-            }
-            .logo-small {
-                display: block;
-            }
-        }
-
-        ul {
-            flex-grow: 1;
-        }
-
-        .profile {
-            text-align: center;
-            line-height: 2rem;
-            padding-bottom: 1rem;
-            width: 40px;
-            
-            
-        }
-
-
-        
     }
 
     .song-bar {
@@ -667,9 +724,7 @@ body {
         
         
        
-    }
-
-    
+    } 
 
     .music-icon {
         display: flex;  
@@ -686,8 +741,6 @@ body {
         .fa-circle-play {
             font-size: 24px;
         } 
-    }
-    
-    
+    }    
  }
 

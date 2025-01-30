@@ -311,6 +311,13 @@ body {
             }  
         }  
     }
+
+    .popular-artists {
+
+        img {
+            border-radius: 50%;
+        }
+    }
 }
 
 /* BOTTOM */
@@ -390,10 +397,10 @@ body {
                 }
 
                 .fa-circle-play {
-                    font-size: 28px;
+                    font-size: 26px;
 
                     &:hover {
-                        font-size: 30px;
+                        font-size: 28px;
                     }
                 } 
             }

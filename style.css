@@ -218,8 +218,6 @@ body {
 
     .content {
         padding: 1rem;
-        flex-direction: column;
-        flex-wrap: wrap;
         
     }
 

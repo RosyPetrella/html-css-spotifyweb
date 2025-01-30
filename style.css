@@ -503,7 +503,6 @@ body {
 
 /* META QUERY */
 /* M */
-
 @media screen and (max-width: 878px) {
 
     .top {
@@ -670,15 +669,16 @@ body {
 
     .main {
 
-        .type {
+        nav {
 
             ul {
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: center;
                 width: 100%;
 
                 li {
-                    width: calc(100% / 12 * 3);
+                    margin-left: 0;
+                    margin-right: 0;
                 }
 
             }

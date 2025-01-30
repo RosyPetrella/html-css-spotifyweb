@@ -89,15 +89,18 @@ body {
             list-style: none;
             padding-top:0.25rem;
             padding-bottom: 0.25rem;
+
+            &:hover {
+                color: var(--main-lighter);
+                opacity: 100;
+            }
             
             a {
                 color: var(--sidebar-text);
                 text-decoration: none; 
                 font-size: 12px;  
 
-                &:hover {
-                    color: var(--main-lighter);
-                }
+                
                 
                 
                 img {
@@ -107,9 +110,6 @@ body {
                     vertical-align: middle;
                     opacity: 50%;  
                     
-                    &:hover {
-                        opacity: 100;
-                    }
                 }
 
                 
@@ -121,7 +121,7 @@ body {
             }
 
             
-
+            
            
             
         }

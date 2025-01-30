@@ -71,6 +71,13 @@ body {
         li {
             &:hover {
             border-left: 1px solid var(--main-highligh);
+                a {
+                    color: white;
+                }
+
+                img {
+                    opacity: 100;
+                };
             }
         }
     }
@@ -89,41 +96,26 @@ body {
             list-style: none;
             padding-top:0.25rem;
             padding-bottom: 0.25rem;
-
-            &:hover {
-                color: var(--main-lighter);
-                opacity: 100;
-            }
             
             a {
                 color: var(--sidebar-text);
                 text-decoration: none; 
                 font-size: 12px;  
 
-                
-                
-                
+ 
                 img {
                     padding-right: 0.5rem;
                     height: 30px;
                     display: inline-block;
                     vertical-align: middle;
-                    opacity: 50%;  
-                    
+                    opacity: 50%;                     
                 }
 
-                
-               
             }
 
             #home-img {
                 opacity: 100%;
-            }
-
-            
-            
-           
-            
+            }  
         }
     }
 
